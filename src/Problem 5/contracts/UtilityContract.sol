@@ -13,5 +13,5 @@ contract UtilityContract {
             balances[i] = IERC20(tokenAddresses[i]).balanceOf(address(walletAddress));
         }
         return (tokenAddresses, balances);
-    }
+	}
 }
