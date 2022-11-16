@@ -1,0 +1,90 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(120deg, #3498db, #2ecc71);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  min-width: 360px;
+}
+.page{
+	max-width: 1000px;
+	margin: 0 auto;
+}
+.img-eth-logo{
+  width: 100px;
+  position: relative;
+  left: 80px
+}
+h1{
+	margin: 40px ;
+	text-align: center;
+  font-weight: 600;
+}
+form{
+	max-width: 400px;
+}
+label{
+	display: block;
+	padding-bottom: 5px;
+	position: relative;
+	padding-left: 5px;
+}
+label span{
+	/* position: absolute; */
+	font-size: 14px;
+	padding-right: 5px;
+	font-style: italic;
+	right: 0;
+}
+input{
+	padding: 10px;
+	width: 100%;
+	margin-bottom: 10px;
+	font-size: 16px;
+	outline: none;
+	margin-bottom: 5px;
+  text-align: justify;
+  border: 2px solid;
+  border-radius: 24px;
+  transition: 0.25s;
+}
+input:focus{
+	border-color: orange;
+}
+.error{
+	color: #af4242;
+	background-color: #fde8ec;
+	padding: 10px;
+	display: none;
+}
+.error.display-error{
+	display:  block;
+  margin-top: 20px;
+	margin-bottom: 20px;
+	transform: translateY(-10px);
+}
+.success{
+	margin-bottom: 30px;
+	color: green;
+	background-color: #d2ffd2;
+	padding: 10px;
+	display: none;
+}
+.success.display-success{
+	display: block;
+}
+input[type=submit]:hover{
+	background-color: #3498db;
+}
+input[type=submit]{
+  text-align: center;
+}

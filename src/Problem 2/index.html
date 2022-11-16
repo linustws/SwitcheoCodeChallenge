@@ -1,0 +1,44 @@
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	 <link rel="stylesheet" href="style.css"> 
+
+	<title>Fancy Form</title>
+</head>
+<body>
+<div class="page">
+  <img class="img-eth-logo" src="img/ethereum-eth-logo.png" alt="eth logo">
+	<h1>Send Ether</h1>
+	<form name="send-eth-form" action="/" method="get" autocomplete="off">
+
+		<p class="success send-success"></p>
+    <div>
+		<label>ETH Address <span>Enter a valid ETH address</span> </label>
+		<input type="text" name="address">
+		<p class="error address-error"></p>
+    </div>
+    <div>
+		<label>Amount to send </label>
+		<input type="number" step="0.00001" min="0" name="amount">
+		<p class="error amount-error"></p>
+    </div>
+    <div>
+		<label>OTP Authentication  </label>
+		<input type="number" name="otp">
+		<p class="error otp-error"></p>
+    </div>
+    <div>
+		<input type="submit" name="send-tokens" value="SEND TOKENS">
+    </div>
+		<p class="error send-error"></p>
+	</form>
+</div>
+
+	<script src="script.js"></script> 
+</body>
+</html>
