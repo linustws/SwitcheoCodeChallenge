@@ -1,13 +1,13 @@
-var sum_to_n_a = function(n) { 
+var sum_to_n_a = function(n) { //recursive
     // your code here
     if (n == 1) {
         return n
     } else {
-        return n + sum_to_n_c(n - 1)
+        return n + sum_to_n_a(n - 1)
     }
 };
 
-var sum_to_n_b = function(n) { 
+var sum_to_n_b = function(n) { // iterative
     // your code here
     let sum = 0
     for (let i = 1; i < n + 1; i++) {
@@ -16,7 +16,7 @@ var sum_to_n_b = function(n) {
     return sum
 };
 
-var sum_to_n_c = function(n) {
+var sum_to_n_c = function(n) { // formula
     // your code here
     return n * (n + 1) /  2
 };
